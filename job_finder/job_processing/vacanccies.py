@@ -55,7 +55,7 @@ class Vacanccies:
         '''
 
         sort_vac = sorted(self.vacanccies_list,
-                          key=lambda x: x.get_money()[1], reverse=True)
+                          reverse=True)
         return sort_vac[:amount]
 
     def vac_sorted(self):
@@ -65,7 +65,7 @@ class Vacanccies:
         '''
 
         sort_vac = sorted(self.vacanccies_list,
-                          key=lambda x: x.get_money()[1], reverse=True)
+                          reverse=True)
         self.vacanccies_list = sort_vac
 
     def vac_filter(self, down, up):

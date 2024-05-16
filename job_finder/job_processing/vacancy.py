@@ -34,6 +34,9 @@ class Vacancy:
 
         return f'Вакансия {self.name}'
 
+    def __lt__(self, other):
+        return self.get_money()[1] < other.get_money()[1]
+
     def get_money(self):
         '''
         Функция возвращает диапазон зарплаты для вакансии.
